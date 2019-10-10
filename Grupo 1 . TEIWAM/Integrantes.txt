@@ -1,4 +1,2 @@
-- Dafne Torrez
-- Mauricio López
-- Lissie Villalba
-- Stefani Cabrera
+-Stefani Cabrera
+-Lissie Villalba
