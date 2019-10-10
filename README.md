@@ -1,3 +1,3 @@
 # STI
-Trabajos de almunos del Samsung Tech Institute
+Trabajos de alumnos del Samsung Tech Institute
 
