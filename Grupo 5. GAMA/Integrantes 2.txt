@@ -1,0 +1,28 @@
+Integrantes
+Alan Martinez
+Camila Gauto
+Ruth Patiño
+Keila Aranda
+
+
+
+Tema 1:  Monitorear los movimientos de la persona .
+Si se detectan movimientos violentos e involuntarios, activar el cronómetro.
+Si las convulsiones pasan de 5 minutos llamar a algún familiar o a emergencias.
+
+Tema 2 : identificar las posibles Funciones. (acciones). 
+Monitoreo.
+Cronómetro.
+Llamada a emergencias.
+
+Tema 3:
+ Monitorear: 
+estar en constante atención al movimiento del paciente, verificando que todo esté bien.
+
+ Cronómetro:
+ iniciar conteo cuando detectemos movimientos bruscos del paciente, llegando así al límite de 5 minutos llegando a ser una emergencia en contra de la salud del paciente. 
+
+Llamada de emergencia:
+accedemos a este proceso cuando el paciente llega al suceso de tener convulsiones superando los 5 minutos 
+buscando así entre los contactos un número de emergencia establecido.
+si no posee un número de emergencia establecido llamar al número de emergencia general siendo así el 911 o un centro de asistencia médica.
