@@ -1,0 +1,6 @@
+Proyecto: High Water System
+Descripción:
+El proyecto se basa en desarrollar un sistema de riego automatizado para hogares y agricultura, controlable y modificable a través del teléfono móvil.
+El objetivo del sistema es evitar el derroche del recurso hídrico en nuestro país, utilizando la tecnología actual. Será de provecho para todos los habitantes del país.
+El sistema de riego funciona de forma sencilla, fácil de utilizar por cualquier persona. 
+Estando conectado a la misma red Wi-Fi del sistema, se podría configurar las distintas variables.

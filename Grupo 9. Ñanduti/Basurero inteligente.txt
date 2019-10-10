@@ -1,0 +1,2 @@
+Si tiene un bote de basura con tapa, probablemente haya aceptado el pequeño inconveniente de abrirlo con la mano y el pie. Sin embargo, existe una solución diferente 
+usando un Arduino Nano y un micro servo para abrir la tapa cada vez que alguien coloca una mano cerca del sensor ultrasónico de la unidad.
