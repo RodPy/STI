@@ -112,79 +112,79 @@ if (command == "1"){ //luces apagadas
  digitalWrite(rele2, HIGH);     
   
   } 
-//
-//  if (command == "V2"){ //CERRAR VENTANA
-//    Serial.print("received <- ");
-//    Serial.println(command);
-//
-// digitalWrite(rele2, LOW);     
-//     
-//  } 
 
-//  if (command == "B1"){ VENTILADOR ON
-//    Serial.print("received <- ");
-//    Serial.println(command);
-//    
-// digitalWrite(rele3, HIGH);    
-//   
-//  } 
-//
-//  if (command == "B2"){ //VENTILADOR OFF
-//    Serial.print("received <- ");
-//    Serial.println(command);
-//
-// digitalWrite(rele3, LOW);    
-//     
-//  } 
-//
-//  if (command == "P1"){ //PUERTA ABRIR
-//    Serial.print("received <- ");
-//    Serial.println(command);
-//
-// digitalWrite(rele4, HIGH);
-//   
-//  } 
-//
-//  if (command == "P2"){ //PUERTA CERRAR
-//    Serial.print("received <- ");
-//    Serial.println(command);
-//
-// digitalWrite(rele4, LOW);
-//  
-//  } 
-//
-//  if (command == "A1"){ //AIRE ON
-//    Serial.print("received <- ");
-//    Serial.println(command);
-//
-// digitalWrite(rele5, HIGH);
-//   
-//  } 
-//
-//  if (command == "A2"){ //AIRE OFF
-//    Serial.print("received <- ");
-//    Serial.println(command);
-//
-// digitalWrite(rele5, LOW);
-//   
-//  } 
-//
-//  if (command == "T1"){ //lTELE
-//    Serial.print("received <- ");
-//    Serial.println(command);
-//
-// digitalWrite(rele6, HIGH);      
-//  } 
-//
-//  if (command == "T2"){ //luces prendidas
-//    Serial.print("received <- ");
-//    Serial.println(command);
-//
-// digitalWrite(rele6, LOW);      
-//  } 
-//
-//
-//
+  if (command == "V2"){ //CERRAR VENTANA
+    Serial.print("received <- ");
+    Serial.println(command);
+
+ digitalWrite(rele2, LOW);     
+     
+  } 
+
+  if (command == "B1"){ VENTILADOR ON
+    Serial.print("received <- ");
+    Serial.println(command);
+    
+ digitalWrite(rele3, HIGH);    
+   
+  } 
+
+  if (command == "B2"){ //VENTILADOR OFF
+    Serial.print("received <- ");
+    Serial.println(command);
+
+ digitalWrite(rele3, LOW);    
+     
+  } 
+
+  if (command == "P1"){ //PUERTA ABRIR
+    Serial.print("received <- ");
+    Serial.println(command);
+
+ digitalWrite(rele4, HIGH);
+   
+  } 
+
+  if (command == "P2"){ //PUERTA CERRAR
+    Serial.print("received <- ");
+    Serial.println(command);
+
+ digitalWrite(rele4, LOW);
+  
+  } 
+
+  if (command == "A1"){ //AIRE ON
+    Serial.print("received <- ");
+    Serial.println(command);
+
+ digitalWrite(rele5, HIGH);
+   
+  } 
+
+  if (command == "A2"){ //AIRE OFF
+    Serial.print("received <- ");
+    Serial.println(command);
+
+ digitalWrite(rele5, LOW);
+   
+  } 
+
+  if (command == "T1"){ //lTELE
+    Serial.print("received <- ");
+    Serial.println(command);
+
+ digitalWrite(rele6, HIGH);      
+  } 
+
+  if (command == "T2"){ //luces prendidas
+    Serial.print("received <- ");
+    Serial.println(command);
+
+ digitalWrite(rele6, LOW);      
+  } 
+
+
+
 if (command == "aa2"){ //TODO ON
     Serial.print("received <- ");
     Serial.println(command);
