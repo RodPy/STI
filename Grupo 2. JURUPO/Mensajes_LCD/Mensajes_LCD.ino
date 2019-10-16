@@ -11,19 +11,19 @@ void setup() {
   lcd.print("SAMSUNG TECH"); 
   lcd.setCursor(3,1);
   lcd.print("INSTITUTE "); 
-  delay(3000); 
+  delay(2000); 
 }
 
 void loop()  {
 
-  smsLCD("Buenas", "Tardes");
+  smsLCD("Richard 2019", "A");
 
   }
 
 
 void smsLCD(String a , String b){
   lcd.clear();
-  lcd.setCursor(1,0);
+  lcd.setCursor(0,0);
   lcd.print(a); 
    lcd.setCursor(1,1);
   lcd.print(b); 
