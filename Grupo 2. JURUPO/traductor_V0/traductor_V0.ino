@@ -1,5 +1,6 @@
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal_I2C lcd(0x27,16,2);// 0x3F , 0x20 , 0x38 , 
 
 
 int flexPin1 = A0; // sensor de flexion 1 conectado en PULGAR
@@ -21,9 +22,15 @@ int value5;
 void setup() {
  
  
-  lcd.begin(16, 2);
-  lcd.setCursor(0, 1);
-  lcd.print("");
+  lcd.init();
+  lcd.backlight();
+  lcd.clear();
+  
+  lcd.setCursor(2,0);
+  lcd.print("SAMSUNG TECH"); 
+  lcd.setCursor(3,1);
+  lcd.print("INSTITUTE "); 
+  delay(2000); 
   Serial.begin(9600);
   delay(200);
  
@@ -54,7 +61,8 @@ void loop() {
 //    lcd.setCursor(4,0);
 //    lcd.print("A");
 //    digitalWrite(6, HIGH);
-//    Serial.println("  A");
+    Serial.println("  A");
+    smsLCD("LETRA: ", "A");
 //    delay(1000);
 // 
   }
@@ -379,3 +387,14 @@ void loop() {
 //}
 
 }
+
+
+
+void smsLCD(String a , String b){
+  lcd.clear();
+  lcd.setCursor(1,0);
+  lcd.print(a); 
+   lcd.setCursor(1,1);
+  lcd.print(b); 
+  delay(3000); 
+  }
