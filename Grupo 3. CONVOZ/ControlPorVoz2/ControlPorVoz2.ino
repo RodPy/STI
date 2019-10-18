@@ -3,8 +3,8 @@
 
 // visit io.adafruit.com if you need to create an account,
 // or if you need your Adafruit IO key.
-#define IO_USERNAME    "Hugui_Ale"
-#define IO_KEY         "31f4aac4218d400aa0cc0141b9217e6b"
+#define IO_USERNAME    "conVoz"
+#define IO_KEY         "5bba3b5b9ed74dada721ac2225e28886"
 
 
 /******************************* WIFI Configuration **************************************/
@@ -36,7 +36,7 @@ int current = 0;
 int last = 0;
 
 // set up the 'command' feed
-AdafruitIO_Feed *command = io.feed("Luces");
+AdafruitIO_Feed *command = io.feed("convoz");
 
 void setup() {
 
@@ -91,159 +91,159 @@ void handleMessage(AdafruitIO_Data *data) {
   //int command = data->toInt();
 String command = data->toString();
   
-  if (command == "0"){ //luces prendidas
+  if (command == "1"){ //luces prendidas
     Serial.print("received <- ");
     Serial.println(command);
  digitalWrite(rele1, HIGH);
    
   } 
 
-if (command == "1"){ //luces apagadas
+if (command == "0"){ //luces apagadas
     Serial.print("received <- ");
     Serial.println(command);
  digitalWrite(rele1, LOW);
      
   } 
 
-  if (command == "V1"){ //ABRIR VENTANA
-    Serial.print("received <- ");
-    Serial.println(command);
-
- digitalWrite(rele2, HIGH);     
-  
-  } 
-
-  if (command == "V2"){ //CERRAR VENTANA
-    Serial.print("received <- ");
-    Serial.println(command);
-
- digitalWrite(rele2, LOW);     
-     
-  } 
-
-  if (command == "B1"){ VENTILADOR ON
-    Serial.print("received <- ");
-    Serial.println(command);
-    
- digitalWrite(rele3, HIGH);    
-   
-  } 
-
-  if (command == "B2"){ //VENTILADOR OFF
-    Serial.print("received <- ");
-    Serial.println(command);
-
- digitalWrite(rele3, LOW);    
-     
-  } 
-
-  if (command == "P1"){ //PUERTA ABRIR
-    Serial.print("received <- ");
-    Serial.println(command);
-
- digitalWrite(rele4, HIGH);
-   
-  } 
-
-  if (command == "P2"){ //PUERTA CERRAR
-    Serial.print("received <- ");
-    Serial.println(command);
-
- digitalWrite(rele4, LOW);
-  
-  } 
-
-  if (command == "A1"){ //AIRE ON
-    Serial.print("received <- ");
-    Serial.println(command);
-
- digitalWrite(rele5, HIGH);
-   
-  } 
-
-  if (command == "A2"){ //AIRE OFF
-    Serial.print("received <- ");
-    Serial.println(command);
-
- digitalWrite(rele5, LOW);
-   
-  } 
-
-  if (command == "T1"){ //lTELE
-    Serial.print("received <- ");
-    Serial.println(command);
-
- digitalWrite(rele6, HIGH);      
-  } 
-
-  if (command == "T2"){ //luces prendidas
-    Serial.print("received <- ");
-    Serial.println(command);
-
- digitalWrite(rele6, LOW);      
-  } 
-
-
-
-if (command == "aa2"){ //TODO ON
-    Serial.print("received <- ");
-    Serial.println(command);
- digitalWrite(rele1, HIGH);
- digitalWrite(rele2, HIGH);     
- digitalWrite(rele3, HIGH);    
- digitalWrite(rele4, HIGH);
- digitalWrite(rele5, HIGH);
- digitalWrite(rele6, HIGH);      
-  }   
+//  if (command == "V1"){ //ABRIR VENTANA
+//    Serial.print("received <- ");
+//    Serial.println(command);
 //
-if (command =="TT1" ){ //TODO OFF
-    Serial.print("received <- ");
-    Serial.println(command);
- digitalWrite(rele1, LOW);
- digitalWrite(rele2, LOW);     
- digitalWrite(rele3, LOW);    
- digitalWrite(rele4, LOW);
- digitalWrite(rele5, LOW);
- digitalWrite(rele6, LOW);   
-
-
- } 
-
-int tt1=100;
-
-  
-
-if (command == "TT12") { //Todo
-for(;;){
-    Serial.print("received <- ");
-    Serial.println(command);
-    digitalWrite(rele1, HIGH);
-    delay(tt1);
-    digitalWrite(rele2, HIGH);     
- delay(tt1);
- digitalWrite(rele3, HIGH);    
- delay(tt1);
- digitalWrite(rele4, HIGH);
- delay(tt1);
- digitalWrite(rele5, HIGH);
- delay(tt1);
- digitalWrite(rele6, HIGH);      
- delay(tt1);
-  digitalWrite(rele1, LOW);
-   delay(tt1);
- digitalWrite(rele2, LOW);     
- delay(tt1);
- digitalWrite(rele3, LOW);    
-  delay(tt1);
- digitalWrite(rele4, LOW);
-  delay(tt1);
- digitalWrite(rele5, LOW);
-  delay(tt1);
- digitalWrite(rele6, LOW); 
-   delay(tt1);
-
-}
-  }  
+// digitalWrite(rele2, HIGH);     
+//  
+//  } 
+//
+//  if (command == "V2"){ //CERRAR VENTANA
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//
+// digitalWrite(rele2, LOW);     
+//     
+//  } 
+//
+//  if (command == "B1"){ VENTILADOR ON
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//    
+// digitalWrite(rele3, HIGH);    
+//   
+//  } 
+//
+//  if (command == "B2"){ //VENTILADOR OFF
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//
+// digitalWrite(rele3, LOW);    
+//     
+//  } 
+//
+//  if (command == "P1"){ //PUERTA ABRIR
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//
+// digitalWrite(rele4, HIGH);
+//   
+//  } 
+//
+//  if (command == "P2"){ //PUERTA CERRAR
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//
+// digitalWrite(rele4, LOW);
+//  
+//  } 
+//
+//  if (command == "A1"){ //AIRE ON
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//
+// digitalWrite(rele5, HIGH);
+//   
+//  } 
+//
+//  if (command == "A2"){ //AIRE OFF
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//
+// digitalWrite(rele5, LOW);
+//   
+//  } 
+//
+//  if (command == "T1"){ //lTELE
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//
+// digitalWrite(rele6, HIGH);      
+//  } 
+//
+//  if (command == "T2"){ //luces prendidas
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//
+// digitalWrite(rele6, LOW);      
+//  } 
+//
+//
+//
+//if (command == "aa2"){ //TODO ON
+//    Serial.print("received <- ");
+//    Serial.println(command);
+// digitalWrite(rele1, HIGH);
+// digitalWrite(rele2, HIGH);     
+// digitalWrite(rele3, HIGH);    
+// digitalWrite(rele4, HIGH);
+// digitalWrite(rele5, HIGH);
+// digitalWrite(rele6, HIGH);      
+//  }   
+////
+//if (command =="TT1" ){ //TODO OFF
+//    Serial.print("received <- ");
+//    Serial.println(command);
+// digitalWrite(rele1, LOW);
+// digitalWrite(rele2, LOW);     
+// digitalWrite(rele3, LOW);    
+// digitalWrite(rele4, LOW);
+// digitalWrite(rele5, LOW);
+// digitalWrite(rele6, LOW);   
+//
+//
+// } 
+//
+//int tt1=100;
+//
+//  
+//
+//if (command == "TT12") { //Todo
+//for(;;){
+//    Serial.print("received <- ");
+//    Serial.println(command);
+//    digitalWrite(rele1, HIGH);
+//    delay(tt1);
+//    digitalWrite(rele2, HIGH);     
+// delay(tt1);
+// digitalWrite(rele3, HIGH);    
+// delay(tt1);
+// digitalWrite(rele4, HIGH);
+// delay(tt1);
+// digitalWrite(rele5, HIGH);
+// delay(tt1);
+// digitalWrite(rele6, HIGH);      
+// delay(tt1);
+//  digitalWrite(rele1, LOW);
+//   delay(tt1);
+// digitalWrite(rele2, LOW);     
+// delay(tt1);
+// digitalWrite(rele3, LOW);    
+//  delay(tt1);
+// digitalWrite(rele4, LOW);
+//  delay(tt1);
+// digitalWrite(rele5, LOW);
+//  delay(tt1);
+// digitalWrite(rele6, LOW); 
+//   delay(tt1);
+//
+//}
+//  }  
 
 
 
