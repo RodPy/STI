@@ -31,7 +31,7 @@
 int trigger = 9;           // declaramos la palabra trigger como un tipo entero y al mismo tiempo reemplaza al pin 9
 
 
-int echo = 8;           // declaramos la palabra echo como un tipo entero y al mismo tiempo reemplaza al pin 8
+int echo = 16;           // declaramos la palabra echo como un tipo entero y al mismo tiempo reemplaza al pin 16
 
 
 float tiempo_de_espera,distancia; // creamos una variable de fotante; es decir, nos puede dar resultados en decimales.
